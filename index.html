@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KORE Creative Studio — Built From The Core</title>
+<meta name="description" content="KORE is a creative studio specialising in branding, visual identity, web design, and creative direction for modern businesses." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="cursor-blob" id="blob"></div>
+<div class="toast" id="toast">Reel coming soon — check back shortly</div>
+
+<!-- ─── NAV ──────────────────────────────────────────────── -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <span class="nav-asterisk">✳</span>
+    kore.creative
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+  </div>
+  <a href="contact.html" class="nav-cta mono">
+    Start a Project
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+    </svg>
+  </a>
+  <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mobile-link">Home</a>
+  <a href="about.html" class="mobile-link">About</a>
+  <a href="services.html" class="mobile-link">Services</a>
+  <a href="work.html" class="mobile-link">Work</a>
+  <a href="contact.html" class="mobile-link mono" style="font-size:20px;">Start a Project →</a>
+</div>
+
+<!-- ─── HERO ──────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-top">
+    <div class="hero-copy">
+      <p class="hero-h1">Built From The Core.</p>
+      <p class="hero-sub">KORE is a creative studio specialising in branding, visual identity, web design, and creative direction for modern businesses.</p>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num mono" data-count="120">0<span>+</span></div>
+          <div class="hero-stat-label">Projects Shipped</div>
+        </div>
+        <div>
+          <div class="hero-stat-num mono" data-count="45">0<span>+</span></div>
+          <div class="hero-stat-label">Brands Built</div>
+        </div>
+        <div>
+          <div class="hero-stat-num mono" data-count="5">0<span>yr</span></div>
+          <div class="hero-stat-label">In Business</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-avatars">
+        <span>JR</span><span>SL</span><span>MT</span>
+      </div>
+      <div class="hero-trust-label">Trusted by 45+ growing brands</div>
+    </div>
+  </div>
+
+  <div class="hero-nav-secondary">
+    <a href="work.html">View Our Work</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <div class="hero-wordmark">KORE<sup>®</sup></div>
+
+  <div class="hero-ticker">
+    <div class="ticker-inner" aria-hidden="true">
+      <span class="ticker-item">Brand Identity <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">Visual Design <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">Motion Design <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">Web &amp; Digital <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">Creative Direction <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">Content Production <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">Brand Identity <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">Visual Design <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">Motion Design <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">Web &amp; Digital <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">Creative Direction <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">Content Production <span class="ticker-dot">✦</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TRUSTED BY ─────────────────────────────────────────── -->
+<section id="trusted" aria-label="Clients we've worked with">
+  <div class="trusted-inner" aria-hidden="true">
+    <span class="trusted-item">✳ SPEED CLUB</span>
+    <span class="trusted-item">✳ NORTHFIELD CO.</span>
+    <span class="trusted-item">✳ ATLAS GOODS</span>
+    <span class="trusted-item">✳ HALO STUDIOS</span>
+    <span class="trusted-item">✳ VERVE MEDIA</span>
+    <span class="trusted-item">✳ SPEED CLUB</span>
+    <span class="trusted-item">✳ NORTHFIELD CO.</span>
+    <span class="trusted-item">✳ ATLAS GOODS</span>
+    <span class="trusted-item">✳ HALO STUDIOS</span>
+    <span class="trusted-item">✳ VERVE MEDIA</span>
+  </div>
+</section>
+
+<!-- ─── ABOUT TEASER ──────────────────────────────────────── -->
+<section id="about">
+  <p class="section-label reveal" style="color:rgba(255,255,255,0.5)">About</p>
+
+  <div class="about-grid">
+    <div class="reveal">
+      <h2 class="about-h2">What We Believe</h2>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <p class="about-sub">Every great brand starts at its core.</p>
+      <p class="about-body">Strong brands aren't built by following trends. They're built on strategy, consistency, and thoughtful design that stands the test of time.</p>
+      <a href="about.html" class="section-foot-link" style="margin-top:32px; color:var(--white); border-color:rgba(255,255,255,0.4);">About Us →</a>
+    </div>
+  </div>
+
+  <div class="about-band" aria-hidden="true">
+    <div class="band-inner">
+      <span class="band-item">kore.creative <span class="band-asterisk">✳</span></span>
+      <span class="band-item">kore.creative <span class="band-asterisk">✳</span></span>
+      <span class="band-item">kore.creative <span class="band-asterisk">✳</span></span>
+      <span class="band-item">kore.creative <span class="band-asterisk">✳</span></span>
+      <span class="band-item">kore.creative <span class="band-asterisk">✳</span></span>
+      <span class="band-item">kore.creative <span class="band-asterisk">✳</span></span>
+      <span class="band-item">kore.creative <span class="band-asterisk">✳</span></span>
+      <span class="band-item">kore.creative <span class="band-asterisk">✳</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── OUR SERVICE (icon cards) ───────────────────────────── -->
+<section id="ourservice">
+  <div class="ourservice-head reveal">
+    <div>
+      <p class="section-label">What We Offer</p>
+      <h2 class="ourservice-title">Our Service</h2>
+    </div>
+    <div class="carousel-arrows">
+      <button class="carousel-arrow" id="osPrev" aria-label="Scroll left">‹</button>
+      <button class="carousel-arrow" id="osNext" aria-label="Scroll right">›</button>
+    </div>
+  </div>
+  <div class="ourservice-track" id="osTrack">
+    <div class="os-card reveal">
+      <div class="os-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+      <h3>Brand Strategy</h3>
+      <p>Positioning, naming, and voice work that gives a business a clear reason to be chosen.</p>
+      <a href="services.html" class="os-link">Learn More →</a>
+    </div>
+    <div class="os-card reveal reveal-delay-1">
+      <div class="os-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+      <h3>Web &amp; Digital</h3>
+      <p>Websites and product interfaces designed for clarity, speed, and conversion.</p>
+      <a href="services.html" class="os-link">Learn More →</a>
+    </div>
+    <div class="os-card reveal reveal-delay-2">
+      <div class="os-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+      <h3>Motion &amp; Video</h3>
+      <p>Logo animation, promos, and social-first video edited to hold attention.</p>
+      <a href="services.html" class="os-link">Learn More →</a>
+    </div>
+    <div class="os-card reveal">
+      <div class="os-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg></div>
+      <h3>Campaign Rollouts</h3>
+      <p>End-to-end creative for product drops and seasonal campaigns, on schedule.</p>
+      <a href="services.html" class="os-link">Learn More →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PORTFOLIO TEASER ───────────────────────────────────── -->
+<section id="portfolio">
+  <div class="portfolio-header">
+    <div>
+      <p class="section-label" style="color:rgba(22,8,5,0.3)">Selected Projects</p>
+      <h2 class="portfolio-title reveal">Our Work</h2>
+    </div>
+    <div class="reveal reveal-delay-1" style="display:flex; flex-direction:column; align-items:flex-end; gap:16px;">
+      <p class="portfolio-sub">A thoughtfully curated portfolio demonstrating our commitment to simplicity and purposeful design.</p>
+      <a href="work.html" class="section-foot-link" style="color:var(--black); border-color:rgba(22,8,5,0.3);">Explore More →</a>
+    </div>
+  </div>
+
+  <div class="project-list">
+    <a href="work.html" style="text-decoration:none; color:inherit;">
+      <div class="project-card reveal">
+        <div>
+          <span class="project-badge mono">Movement Club — Branding</span>
+          <div class="project-brand">speed<sup>©</sup></div>
+          <p class="project-tagline">"Movement is a mindset."</p>
+          <div class="project-tag">
+            <span class="tag">Brand Identity</span>
+            <span class="tag">Motion Design</span>
+          </div>
+        </div>
+        <div>
+          <p class="project-desc">SPEED is a modern movement club where people come together to unlock energy, discipline, and community. Not a gym — a lifestyle built around motion.</p>
+        </div>
+      </div>
+    </a>
+    <a href="work.html" style="text-decoration:none; color:inherit;">
+      <div class="project-card reveal reveal-delay-1">
+        <div>
+          <span class="project-badge mono">Northfield Co. — Web &amp; Brand</span>
+          <div class="project-brand">north<sup>®</sup></div>
+          <p class="project-tagline">"Grounded, built to last."</p>
+          <div class="project-tag">
+            <span class="tag">Web Design</span>
+            <span class="tag">Brand Identity</span>
+          </div>
+        </div>
+        <div>
+          <p class="project-desc">A full rebrand and e-commerce build for a heritage outdoor goods company, engineered to convert first-time visitors into repeat buyers.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIALS ───────────────────────────────────────── -->
+<section id="testimonials">
+  <div class="testimonials-head reveal">
+    <p class="section-label" style="justify-content:center;">Client Voices</p>
+    <h2 class="testimonials-title">What Partners Say</h2>
+  </div>
+  <div class="testi-wrap reveal">
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-slide">
+        <div class="testi-card">
+          <p class="testi-quote">"KORE didn't just design our logo — they rebuilt how we think about our brand. Every touchpoint feels intentional now."</p>
+          <div class="testi-person">
+            <div class="testi-avatar mono">JR</div>
+            <div style="text-align:left">
+              <div class="testi-name">James Rizaki</div>
+              <div class="testi-role">Founder, Speed Club</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-slide">
+        <div class="testi-card">
+          <p class="testi-quote">"The website they built doubled our conversion rate in the first month. Fast, sharp, and genuinely creative."</p>
+          <div class="testi-person">
+            <div class="testi-avatar mono" style="background:var(--purple)">SL</div>
+            <div style="text-align:left">
+              <div class="testi-name">Samantha Leonardo</div>
+              <div class="testi-role">CMO, Northfield Co.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-slide">
+        <div class="testi-card">
+          <p class="testi-quote">"We've worked with three agencies before KORE. None of them understood our audience this fast, or this well."</p>
+          <div class="testi-person">
+            <div class="testi-avatar mono" style="background:var(--off)">MT</div>
+            <div style="text-align:left">
+              <div class="testi-name">Mark Trevor</div>
+              <div class="testi-role">CEO, Atlas Goods</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-controls">
+      <button class="carousel-arrow" id="testiPrev" aria-label="Previous testimonial">‹</button>
+      <div class="testi-dots" id="testiDots"></div>
+      <button class="carousel-arrow" id="testiNext" aria-label="Next testimonial">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ─── DIVE / SHOWREEL CTA ─────────────────────────────────── -->
+<section id="dive">
+  <h2 class="dive-title reveal">See our work <em>in motion.</em> Watch the 2025 showreel.</h2>
+  <div style="text-align:center;" class="reveal">
+    <button class="play-btn" id="playReel" aria-label="Play showreel">
+      <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20"/></svg>
+    </button>
+    <p class="dive-note">2 min · Brand films, motion &amp; campaigns</p>
+  </div>
+</section>
+
+<!-- ─── FOOTER / CTA ───────────────────────────────────────── -->
+<footer id="footer">
+  <div class="footer-cta-label reveal mono">Let's build something great</div>
+  <h2 class="footer-cta-title reveal">
+    Ready to build your brand <em>from the core?</em>
+  </h2>
+  <a href="contact.html" class="cta-btn reveal">
+    Start a Project
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+    </svg>
+  </a>
+
+  <div class="footer-cols">
+    <div class="footer-col">
+      <span class="footer-logo">✳ kore.creative</span>
+      <p style="max-width:280px; color:rgba(255,255,255,0.45)">A creative studio building brand identity, web, and motion for businesses ready to grow with intention.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="Behance"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M2 6h7M2 18h6a3 3 0 0 0 0-6H2v6zM2 12h5a2.5 2.5 0 0 0 0-5H2v5z"/><path d="M14 15a4 4 0 0 0 8 0M14 13h8a4 4 0 0 0-8 0z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9h4v2a4 4 0 0 1 8 0v9h-4v-8a2 2 0 0 0-4 0v8h-4z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="work.html">Our Work</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="index.html#dive">Showreel</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <p style="color:rgba(255,255,255,0.65)">hello@kore.creative</p>
+      <p style="color:rgba(255,255,255,0.65)">+91 98765 43210</p>
+      <p style="color:rgba(255,255,255,0.45)">Pune, Maharashtra, India</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2025 KORE Creative Studio</span>
+    <span>Built From The Core.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

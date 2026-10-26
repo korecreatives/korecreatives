@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services — KORE Creative Studio</title>
+<meta name="description" content="Brand strategy, web and digital, motion and video, and campaign rollouts — the services KORE offers to build and grow brands." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="cursor-blob" id="blob"></div>
+<div class="toast" id="toast"></div>
+
+<!-- ─── NAV ──────────────────────────────────────────────── -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <span class="nav-asterisk">✳</span>
+    kore.creative
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="work.html">Work</a>
+  </div>
+  <a href="contact.html" class="nav-cta mono">
+    Start a Project
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+    </svg>
+  </a>
+  <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mobile-link">Home</a>
+  <a href="about.html" class="mobile-link">About</a>
+  <a href="services.html" class="mobile-link">Services</a>
+  <a href="work.html" class="mobile-link">Work</a>
+  <a href="contact.html" class="mobile-link mono" style="font-size:20px;">Start a Project →</a>
+</div>
+
+<!-- ─── PAGE HERO ────────────────────────────────────────── -->
+<section class="page-hero">
+  <p class="section-label reveal">Services</p>
+  <h1 class="page-hero-title reveal reveal-delay-1">Everything a brand needs, none of what it doesn't.</h1>
+  <p class="page-hero-sub reveal reveal-delay-2">From brand strategy to digital experiences, we create work that helps businesses stand out, connect with their audience, and grow with confidence.</p>
+</section>
+
+<!-- ─── OUR SERVICE (icon cards) ───────────────────────────── -->
+<section id="ourservice" style="padding-top:40px;">
+  <div class="ourservice-head reveal">
+    <div>
+      <p class="section-label">What We Offer</p>
+      <h2 class="ourservice-title">Our Service</h2>
+    </div>
+    <div class="carousel-arrows">
+      <button class="carousel-arrow" id="osPrev" aria-label="Scroll left">‹</button>
+      <button class="carousel-arrow" id="osNext" aria-label="Scroll right">›</button>
+    </div>
+  </div>
+  <div class="ourservice-track" id="osTrack">
+    <div class="os-card reveal">
+      <div class="os-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+      <h3>Brand Strategy</h3>
+      <p>Positioning, naming, and voice work that gives a business a clear reason to be chosen.</p>
+      <a href="#servicedetail" class="os-link">Learn More →</a>
+    </div>
+    <div class="os-card reveal reveal-delay-1">
+      <div class="os-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+      <h3>Web &amp; Digital</h3>
+      <p>Websites and product interfaces designed for clarity, speed, and conversion.</p>
+      <a href="#servicedetail" class="os-link">Learn More →</a>
+    </div>
+    <div class="os-card reveal reveal-delay-2">
+      <div class="os-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+      <h3>Motion &amp; Video</h3>
+      <p>Logo animation, promos, and social-first video edited to hold attention.</p>
+      <a href="#servicedetail" class="os-link">Learn More →</a>
+    </div>
+    <div class="os-card reveal">
+      <div class="os-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg></div>
+      <h3>Campaign Rollouts</h3>
+      <p>End-to-end creative for product drops and seasonal campaigns, on schedule.</p>
+      <a href="#servicedetail" class="os-link">Learn More →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICES OVERVIEW ──────────────────────────────────── -->
+<section id="services">
+  <div class="services-header reveal">
+    <p class="section-label" style="justify-content:center; color:rgba(22,8,5,0.35)">Packages</p>
+    <h2 class="services-title">What we offer</h2>
+    <p class="services-desc">Two tiers of engagement — pick the one that matches where your brand is right now, then explore what's inside below.</p>
+  </div>
+  <div class="service-cards">
+    <div class="service-card reveal reveal-delay-1" data-target="panel-primary">
+      <span class="card-num">01.</span>
+      <div class="card-name">Primary Services</div>
+      <div class="card-tagline">The foundation of every strong brand.</div>
+      <div class="card-arrow">↗</div>
+    </div>
+    <div class="service-card reveal reveal-delay-2" data-target="panel-advanced">
+      <span class="card-num">02.</span>
+      <div class="card-name">Advanced Services</div>
+      <div class="card-tagline">Creative solutions that take your brand further.</div>
+      <div class="card-arrow">↗</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICE DETAIL (tab switched) ──────────────────────── -->
+<section id="servicedetail">
+  <div class="service-tabs reveal" role="tablist" style="justify-content:flex-start;">
+    <button class="service-tab active" data-panel="panel-primary">01. Primary Services</button>
+    <button class="service-tab" data-panel="panel-advanced">02. Advanced Services</button>
+  </div>
+
+  <div class="detail-panel active" id="panel-primary">
+    <div class="primary-top">
+      <div class="section-num reveal">01.</div>
+      <div class="primary-heading reveal reveal-delay-1">
+        <div class="primary-title">Primary Services</div>
+        <p class="primary-desc">These are our core offerings, designed for businesses looking to build or elevate their brand.</p>
+      </div>
+    </div>
+    <div class="service-cols">
+      <div class="service-col reveal">
+        <div class="col-title">Brand Identity</div>
+        <p class="col-sub">Build a timeless and memorable brand.</p>
+        <div class="col-label">Includes</div>
+        <ul class="col-list">
+          <li>Logo Design</li><li>Brand Strategy</li><li>Visual Identity</li>
+          <li>Typography System</li><li>Colour Palette</li><li>Brand Guidelines</li>
+        </ul>
+      </div>
+      <div class="service-col reveal reveal-delay-1">
+        <div class="col-title">Social Media Design</div>
+        <p class="col-sub">Consistent content that strengthens your online presence.</p>
+        <div class="col-label">Includes</div>
+        <ul class="col-list">
+          <li>Instagram Branding</li><li>Carousel Posts</li><li>Story Templates</li>
+          <li>Ad Creatives</li><li>Reels Covers</li>
+        </ul>
+      </div>
+      <div class="service-col reveal reveal-delay-2">
+        <div class="col-title">Website Design</div>
+        <p class="col-sub">Modern websites focused on user experience and growth.</p>
+        <div class="col-label">Includes</div>
+        <ul class="col-list">
+          <li>Landing Pages</li><li>Business Websites</li><li>Portfolio Websites</li>
+          <li>UI/UX Design</li><li>Responsive Design</li><li>Figma Prototypes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-panel" id="panel-advanced">
+    <div class="adv-top">
+      <div class="adv-num reveal">02.</div>
+      <div class="reveal reveal-delay-1">
+        <div class="adv-title">Advanced Services</div>
+        <p class="adv-desc" style="margin-top:12px">Designed for brands ready to scale with high-impact creative execution.</p>
+        <p style="font-size:13px; color:rgba(255,255,255,0.25); margin-top:8px; font-family:var(--font-mono)">Includes Primary +</p>
+      </div>
+    </div>
+    <div class="adv-cols">
+      <div class="adv-col reveal">
+        <div class="adv-col-title">Motion Design</div>
+        <p class="adv-col-sub">Bring your brand to life through movement.</p>
+        <div class="adv-col-label">Deliverables</div>
+        <ul class="adv-col-list">
+          <li>Logo Animation</li><li>Motion Graphics</li><li>Explainer Videos</li>
+          <li>Product Promos</li><li>Commercial Editing</li>
+        </ul>
+      </div>
+      <div class="adv-col reveal reveal-delay-1">
+        <div class="adv-col-title">Creative Strategy</div>
+        <p class="adv-col-sub">Big-picture thinking for impactful campaigns.</p>
+        <div class="adv-col-label">Deliverables</div>
+        <ul class="adv-col-list">
+          <li>Campaign Strategy</li><li>Art Direction</li><li>Moodboards</li>
+          <li>Visual Strategy</li><li>Creative Consultation</li>
+        </ul>
+      </div>
+      <div class="adv-col reveal reveal-delay-2">
+        <div class="adv-col-title">Content Production</div>
+        <p class="adv-col-sub">Create visuals that tell your brand story.</p>
+        <div class="adv-col-label">Deliverables</div>
+        <ul class="adv-col-list">
+          <li>Product Photography</li><li>Lifestyle Shoots</li><li>Video Production</li>
+          <li>Short-form Content</li><li>Content Planning</li>
+        </ul>
+      </div>
+    </div>
+    <p class="adv-quote reveal">"We don't do everything — we specialise in the services that build and grow brands."</p>
+  </div>
+</section>
+
+<!-- ─── FOOTER / CTA ───────────────────────────────────────── -->
+<footer id="footer">
+  <div class="footer-cta-label reveal mono">Let's build something great</div>
+  <h2 class="footer-cta-title reveal">
+    Ready to build your brand <em>from the core?</em>
+  </h2>
+  <a href="contact.html" class="cta-btn reveal">
+    Start a Project
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+    </svg>
+  </a>
+
+  <div class="footer-cols">
+    <div class="footer-col">
+      <span class="footer-logo">✳ kore.creative</span>
+      <p style="max-width:280px; color:rgba(255,255,255,0.45)">A creative studio building brand identity, web, and motion for businesses ready to grow with intention.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="Behance"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M2 6h7M2 18h6a3 3 0 0 0 0-6H2v6zM2 12h5a2.5 2.5 0 0 0 0-5H2v5z"/><path d="M14 15a4 4 0 0 0 8 0M14 13h8a4 4 0 0 0-8 0z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9h4v2a4 4 0 0 1 8 0v9h-4v-8a2 2 0 0 0-4 0v8h-4z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="work.html">Our Work</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="index.html#dive">Showreel</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <p style="color:rgba(255,255,255,0.65)">hello@kore.creative</p>
+      <p style="color:rgba(255,255,255,0.65)">+91 98765 43210</p>
+      <p style="color:rgba(255,255,255,0.45)">Pune, Maharashtra, India</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2025 KORE Creative Studio</span>
+    <span>Built From The Core.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
